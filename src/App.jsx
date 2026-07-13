@@ -1,4 +1,5 @@
 import React from 'react'
+import { ToastContainer, toast,Bounce } from "react-toastify";
 import Navbar from './components/Navbar'
 import ProductList from './pages/ProductList'
 import Cart from './pages/Cart'
