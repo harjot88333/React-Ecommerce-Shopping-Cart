@@ -14,7 +14,7 @@ const Navbar = () => {
             <div className="flex items-center space-x-3 cursor-pointer">
               <Home className="w-8 h-8 text-orange-400 drop-shadow-lg" />
               <h1 className="text-4xl font-extrabold tracking-widest uppercase">
-                WDM<span className="text-orange-400">STORE</span>
+                JOT<span className="text-orange-400">STORE</span>
               </h1>
             </div>
           </Link>

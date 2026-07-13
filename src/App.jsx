@@ -1,5 +1,5 @@
 import React from 'react'
-import { ToastContainer, toast,Bounce } from "react-toastify";
+import { ToastContainer, toast, Bounce } from "react-toastify";
 import Navbar from './components/Navbar'
 import ProductList from './pages/ProductList'
 import Cart from './pages/Cart'
@@ -11,20 +11,33 @@ import OrderConfirmation from './pages/OrderConfirmation'
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
 const App = () => {
   return (
-  <>
-    <Router>
-      <div className="min-h-screen bg-gray-950 font-sans">
-        <Navbar/>
+    <>
+      <Router>
+        <ToastContainer
+          position="top-right"
+          autoClose={5000}
+          hideProgressBar={false}
+          newestOnTop={false}
+          closeOnClick={false}
+          rtl={false}
+          pauseOnFocusLoss
+          draggable
+          pauseOnHover
+          theme="dark"
+          transition={Bounce}
+        />
+        <div className="min-h-screen bg-gray-950 font-sans">
+          <Navbar />
 
-      <Routes>
-       <Route path='/' element={<ProductList/>}/>
-       <Route path='/product/:id' element={<ProductDetails/>}/>
-       <Route path='/cart' element={<Cart/>}/>
-       <Route path='/checkout' element={<Checkout/>}/>
-      </Routes>
-      <Footer/>
+          <Routes>
+            <Route path='/' element={<ProductList />} />
+            <Route path='/product/:id' element={<ProductDetails />} />
+            <Route path='/cart' element={<Cart />} />
+            <Route path='/checkout' element={<Checkout />} />
+          </Routes>
+          <Footer />
         </div>
-    </Router>
+      </Router>
     </>
   )
 }
