@@ -1,5 +1,4 @@
 import { ToastContainer, toast, Bounce } from "react-toastify";
-
 import { createContext, useContext, useState, useMemo } from "react";
 
 const CartContext = createContext();
