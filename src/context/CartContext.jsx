@@ -3,7 +3,7 @@ import { createContext, useContext, useState, useMemo } from "react";
 
 const CartContext = createContext();
 
-import { initialProducts } from "../data/product";
+import { initialProducts } from "../data/Product";
 
 export const CartProvider = (props) => {
   const [cart, setCart] = useState([]);
